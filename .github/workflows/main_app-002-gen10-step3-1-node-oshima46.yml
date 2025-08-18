@@ -24,9 +24,11 @@ jobs:
           node-version: '22.x'
 
       - name: npm install, build, and test
+
       #1
         env:
           NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}
+
         run: |
           npm install
           npm run build --if-present
@@ -65,4 +67,4 @@ jobs:
           app-name: 'app-002-gen10-step3-1-node-oshima46'
           slot-name: 'Production'
           package: ./deploy #4
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_718598C9C5AF48328C5F64B41696FD40 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7660520C4624D698CDB15F2EEFF961E }}
