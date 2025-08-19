@@ -1,5 +1,5 @@
 # github workflows
-.github/
+# .github/
 
 # dependencies
 /node_modules
